@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Abdo Moustafa</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Abdo.Moustafa@ucdconnect.ie</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <h2 id="text">Abdo Moustafa</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_behind.png" id="mountains_behind">
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Introductory Profile</h2>
+        <p>
+            <br>
+            Ambitious and technically astute graduate with experience in software development across a wide range of
+            operational platforms. Equipped with a strong background in all aspects of new system planning, design, coding,
+            development, testing, and implementation with a core focus on ensuring continuous delivery of quality excellence.
+            Receptive to new and emerging technologies, as well as being recognised for enthusiasm, energy, drive, and open-minded curiosity
+            while demonstrating resilience to excel during an impressive academic background. True digital native with an intricate eye for 
+            detail that flourishes irregardless of whether it’s an individual or team environment. Passionate problem solver possessing superb 
+            communication skills (both oral and written) with a potent desire to further elevate their software development skill set. <br><br><br>
+
+            <h3>Core Competencies</h3><br><br>
+
+        </p>
+        <p>
+            <pre>
+             - Java                                                             - C                                                           -Python<br>
+             - Team Collaboration                                 - Analytical Thinking                         - Relationship Building<br>
+             - APIs                                                               - SQL                                                      - Git<br>
+             - Interpersonal Communication              - Organising & Planning                   - Attention To Detail<br>
+             - HTML                                                              - JavaScript                                       - CSS
+             
+
+            </pre>
+            
+
+
+        </p>
+
+       
+
+
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.3 + 'px';
+            moon.style.top = value*0.75 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 3 + 'px';
+            text.style.marginTop = value * 0.8 + 'px';
+            btn.style.marginTop = value * 0.8 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+        })
+
+    </script>
+
+
+</body>
+
+  
+
+
+
+
+</html>
